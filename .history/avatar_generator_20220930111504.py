@@ -2,9 +2,7 @@ from email.mime import image
 import os
 import random
 from typing import List
-from PIL import Image
 from layer import Layer 
-
 class AvatarGenerator: 
     def __init__(self, images_path: str):
         self.layers: List[Layer] = self.load_image_layers(images_path)
