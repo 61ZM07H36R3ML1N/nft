@@ -19,14 +19,11 @@ class AvatarGenerator:
             layers.append(layer)
         return layers
         
-    def generate_image_sequence(self):
-        image_path_sequence = []
-        for layer in self.layers:
-                image_path = layer.get_random_image_path()
-                image_path_sequence.append(image_path)
-    
-        return image_path_sequence
     
     def generate_avatar(self):
-       print("AvatarGenerator: Generating Avatar!")
-       image_path_sequence = self.generate_image_sequence
+        image_path_sequence = []
+        for layer in self.layers:
+            image_path = layer.get_random_image_path()
+            image_path_sequence.append(image_path)
+            
+            print(image_path_sequence)
