@@ -6,9 +6,10 @@ class AvatarGenerator:
         pass
     
     def load_image_layers(self, images_path: str):
-        sub_paths = sorted(os.listdir(images_path))
+        sub_paths = sorted(os.listdir(images_path).sort)
+        sub_paths.sort()
         print(sub_paths)
-        layers = sub_paths
+        layers = []
         return layers
         
     
