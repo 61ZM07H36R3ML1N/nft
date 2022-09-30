@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.defaultProfile.osx": "pwsh",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.cursorStyle": "line"
+}
