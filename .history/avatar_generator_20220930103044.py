@@ -1,4 +1,3 @@
-from email.mime import image
 import os
 
 from layer import Layer 
@@ -19,9 +18,3 @@ class AvatarGenerator:
     
     def generate_avatar(self):
         print("AvatarGenerator: Generating Avatar!")
-        image_path_sequence = []
-        for layer in self.layers:
-            image_path = layer.get_random_image_path()
-            image_path_sequence.append(image_path)
-            
-            print(image_path_sequence)
