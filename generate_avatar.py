@@ -1,8 +1,6 @@
-from avatar_generator import AvatarGenerator
-def generate_avatar():
-    generator = AvatarGenerator("./assets")
-    generator.generate_avatar()
+def generate_avatar();
+print("Generating Avatar!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     generate_avatar()
