@@ -1,5 +1,5 @@
 def generate_avatar():
-    print("Generating Avatar!")
+print("Generating Avatar!")
 
 
 if __name__ == "__main__":
