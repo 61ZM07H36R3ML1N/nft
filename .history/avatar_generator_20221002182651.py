@@ -1,3 +1,4 @@
+from email.mime import image
 import os
 import random
 from typing import List
@@ -32,15 +33,12 @@ class AvatarGenerator:
     
     def render_avatar_image(self, image_path_sequence: List[str]):
         image = Image.new("RGBA", (124, 231), self.background_color)
-        for image_path in image_path_sequence:
-            layer_image = Image.open(image_path)
-            image = Image.alpha_composite(image, layer_image)
-        return image
+        return image 
     
     def save_image(self, image: Image.Image):
         image_file_name = "pixatar.png"
-        image_save_path = os.path.join(self.output_path, image_file_name)
-        image.save(image_save_path)
+        image_save_path = os.path.join(self.output_path)
+        image.save()
         
     
     def generate_avatar(self):

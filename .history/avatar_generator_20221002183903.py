@@ -1,3 +1,4 @@
+from email.mime import image
 import os
 import random
 from typing import List
@@ -34,7 +35,7 @@ class AvatarGenerator:
         image = Image.new("RGBA", (124, 231), self.background_color)
         for image_path in image_path_sequence:
             layer_image = Image.open(image_path)
-            image = Image.alpha_composite(image, layer_image)
+            new_image = Image.alpha_composite(image, layer_image)
         return image
     
     def save_image(self, image: Image.Image):
